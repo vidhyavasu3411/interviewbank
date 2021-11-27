@@ -107,8 +107,7 @@ class _HomePageState extends State<HomePage> {
         },
         onClosed: () {
           print("closed");
-        });
-  }
+        });}
 
   @override
   Widget build(BuildContext context) {
@@ -118,7 +117,6 @@ class _HomePageState extends State<HomePage> {
       body: GridView.builder(
         physics: ScrollPhysics(),
         shrinkWrap: true,
-
         scrollDirection: Axis.vertical,
         itemCount: programeList.length,
         gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
